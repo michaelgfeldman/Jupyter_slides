@@ -11918,15 +11918,16 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Roadmap">Roadmap<a class="anchor-link" href="#Roadmap">&#182;</a></h1><p>at least what we've done</p>
 <ul>
-<li>Research on existing solutions and resources (Recommended Readings &amp; Sources)</li>
+<li>Research on existing solutions and resources </li>
 <li>Define a source list of information</li>
+<li>Define the structure the source should be mapped to</li>
 <li>Define an NLP architecture for data processing</li>
 <li>Create data scrappers</li>
 <li>Join modules</li>
@@ -11935,6 +11936,74 @@ a.anchor-link {
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Source-list">Source list<a class="anchor-link" href="#Source-list">&#182;</a></h1><ul>
+<li><a href="https://paperswithcode.com/">https://paperswithcode.com/</a></li>
+<li><a href="https://towardsdatascience.com/">https://towardsdatascience.com/</a></li>
+<li><a href="https://becominghuman.ai/">https://becominghuman.ai/</a></li>
+<li><a href="http://www.arxiv-sanity.com/">http://www.arxiv-sanity.com/</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/">https://www.analyticsvidhya.com/blog/</a></li>
+<li><a href="https://www.dataquest.io/blog/">https://www.dataquest.io/blog/</a></li>
+<li><a href="https://www.kdnuggets.com/">https://www.kdnuggets.com/</a></li>
+<li><a href="http://blog.kaggle.com/">http://blog.kaggle.com/</a></li>
+<li><a href="https://pythonprogramming.net/data-analysis-tutorials/">https://pythonprogramming.net/data-analysis-tutorials/</a></li>
+<li><a href="https://www.reddit.com/r/MachineLearning/">https://www.reddit.com/r/MachineLearning/</a></li>
+<li><a href="https://blog.openai.com/">https://blog.openai.com/</a></li>
+<li><a href="https://machinelearningmastery.com/blog/">https://machinelearningmastery.com/blog/</a></li>
+<li><a href="http://blog.yhat.com/">http://blog.yhat.com/</a></li>
+<li><a href="http://www.gitxiv.com/">http://www.gitxiv.com/</a></li>
+<li><a href="https://deepmind.com/research/">https://deepmind.com/research/</a></li>
+<li><a href="https://code.fb.com/">https://code.fb.com/</a></li>
+<li><a href="http://www.fast.ai/">http://www.fast.ai/</a></li>
+<li><a href="https://www.deeplearningweekly.com/">https://www.deeplearningweekly.com/</a></li>
+<li><a href="https://eng.uber.com/">https://eng.uber.com/</a></li>
+<li><a href="http://news.mit.edu/topic/machine-learning">http://news.mit.edu/topic/machine-learning</a></li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Example-of-a-mapping-structure">Example of a mapping structure<a class="anchor-link" href="#Example-of-a-mapping-structure">&#182;</a></h1>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{</span><span class="s2">&quot;someblog.com&quot;</span><span class="p">:</span>
+    <span class="p">{</span>   
+        <span class="s2">&quot;source&quot;</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span>
+        <span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;New tyoe of robotics&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;time_to_read&quot;</span><span class="p">:</span><span class="s2">&quot;approximately 40 minutes&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;short_summary&quot;</span><span class="p">:</span><span class="s2">&quot;Some lines&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;our_tags&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;ML&quot;</span><span class="p">,</span> <span class="s2">&quot;NLP&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;given_by_blog_tags&quot;</span><span class="p">:[</span><span class="s2">&quot;Disussion&quot;</span><span class="p">,</span><span class="s2">&quot;Project&quot;</span><span class="p">,</span><span class="s2">&quot;Reserch&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;19 Sep 2018&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;author_name&quot;</span><span class="p">:</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;number_of_comments&quot;</span><span class="p">:</span><span class="mi">34</span><span class="p">,</span> 
+        <span class="s2">&quot;preview_picture&quot;</span><span class="p">:</span><span class="s2">&quot;Here will be a png&quot;</span> <span class="p">,</span>
+        <span class="s2">&quot;github_link&quot;</span><span class="p">:</span><span class="s2">&quot;https://github.com/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;arxiv_link&quot;</span><span class="p">:</span><span class="s2">&quot;https://arxiv.org/abs/1807.02033v2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;reddit_link&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.reddit.com/r/MachineLearning/comments/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;amount_of_facebooks&quot;</span><span class="p">:</span><span class="mi">450</span><span class="p">,</span>
+        <span class="s2">&quot;amount_of_twits&quot;</span><span class="p">:</span><span class="mi">450</span>
+    <span class="p">}}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12019,8 +12088,81 @@ Fragment of that dict:</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Finishing-up-our-tagger">Finishing up our tagger<a class="anchor-link" href="#Finishing-up-our-tagger">&#182;</a></h1><p>(никита должен сказать как мы закончили с теггером)</p>
+<h1 id="Finishing-up-our-tagger">Finishing up our tagger<a class="anchor-link" href="#Finishing-up-our-tagger">&#182;</a></h1><ul>
+<li>Mesuaring hamming a distance between found keyphrase and terms from our list</li>
+<li>If found close enough term from list, we declare it as a TAG(close enough = preset threshold)</li>
+<li>Than we again mesuare a hamming distance but now between our tags to get rid of simillar ones</li>
+</ul>
 
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Summarization-and-a-time-estimation">Summarization and a time estimation<a class="anchor-link" href="#Summarization-and-a-time-estimation">&#182;</a></h1><p><img src="img/clock.jpg" alt=""></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Time-estimation-and-readability">Time estimation and readability<a class="anchor-link" href="#Time-estimation-and-readability">&#182;</a></h1><ul>
+<li>Time estimation counted through simple medium formula where we just divide number of words by average WPM and every picture adds 12 seconds</li>
+<li>Readability counted through more complex Flesch reading ease formula 
+<img src="img/Flesch-Reading-Ease-2.jpg" alt=""></li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Summarization">Summarization<a class="anchor-link" href="#Summarization">&#182;</a></h1><p>We've used a library called sumy which has a whole bunch of summarizers and challenge was to choose the right one.<br>
+We've ended up choosing Luhn.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Data-Engineering">Data Engineering<a class="anchor-link" href="#Data-Engineering">&#182;</a></h1>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(слайды мариам)</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Joining-modules">Joining modules<a class="anchor-link" href="#Joining-modules">&#182;</a></h1><ul>
+<li>Combining all parts of the script</li>
+<li>Сonnecting script to the DB</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Thanks-for-attention!">Thanks for attention!<a class="anchor-link" href="#Thanks-for-attention!">&#182;</a></h1>
 </div>
 </div>
 </div></section></section>
